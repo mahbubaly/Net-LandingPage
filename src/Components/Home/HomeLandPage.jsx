@@ -9,7 +9,7 @@ const HomeLandPage = () => {
     const navBar = <>
         <li>
             <a
-                className="text-[#0B0B44]  rounded-md  shadow_bg  text-lg  transition hover:text-gray-500/75"
+                className="lg:text-[#0B0B44] text-white  rounded-md  shadow_bg  text-lg  transition hover:text-gray-500/75"
                 href="/"
             >
                 How to buy
@@ -18,7 +18,7 @@ const HomeLandPage = () => {
 
         <li>
             <a
-                className="text-[#0B0B44] text-lg transition hover:text-gray-500/75"
+                className="lg:text-[#0B0B44] text-white text-lg transition hover:text-gray-500/75"
                 href="/"
             >
                 Roadmap
@@ -27,7 +27,7 @@ const HomeLandPage = () => {
 
         <li>
             <a
-                className="text-[#0B0B44] text-lg transition hover:text-gray-500/75"
+                className="lg:text-[#0B0B44] text-white text-lg transition hover:text-gray-500/75"
                 href="/"
             >
                 Whitepaper
@@ -51,7 +51,7 @@ const HomeLandPage = () => {
     let interval = useRef;
 
     const starTimer = () => {
-        const countdownDate = new Date('10 aug 2023');
+        const countdownDate = new Date('12 aug 2023');
 
 
         interval = setInterval(() => {
@@ -96,7 +96,7 @@ const HomeLandPage = () => {
 
     return (
         <>
-            <header className="bg-white">
+            <header id='nav' className="bg-white">
                 <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between">
                         <div className="flex-1 flex items-center gap-2">
@@ -129,7 +129,7 @@ const HomeLandPage = () => {
 
                                         <span>
                                             {
-                                                open === true ? <>   <RxCross2 className="h-5 bottom-0 w-5 text-black swap-off fill-current" /> </> : <svg
+                                                open === true ? <>   <> </> </> : <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     className="h-5 w-5 "
                                                     fill="none"
@@ -146,14 +146,20 @@ const HomeLandPage = () => {
                                             }
                                         </span>
 
-                                        <div className={`${open ? 'bg-white w-1/2 right-0 top-14  p-2   pl-3 ' : '-bottom-96 -left-[100%]'
+                                        <div className={`${open ? 'bg-primary w-full right-0 top-0  p-2   pl-3 ' : '-bottom-96 -left-[100%]'
                                             } absolute flex flex-col duration-500  gap-6 `}  >
 
 
                                             <nav aria-label="Global">
-                                                <ul className="block lg:hidden justify-end  gap-6 text-sm">
+                                                <ul className="block  lg:hidden justify-end  gap-6 text-sm ">
                                                     {navBar}
                                                 </ul>
+
+                                                <div className='flex justify-center'>
+                                                    <div className='p-2 mx-auto rounded-md  shadow_bg  text-sm font-medium  transition  lg:my-0      lg:text-lg'>
+                                                        <RxCross2 className="h-7 bottom-0  w-7 bg-white text-black swap-off fill-current" />
+                                                    </div>
+                                                </div>
                                             </nav>
 
 
@@ -223,7 +229,8 @@ const HomeLandPage = () => {
 
                         <div className='flex items-center md:ml-10'>
                             <MdKeyboardDoubleArrowRight className='w-6 h-6 text-[#FF5C64]' />
-                            <button className='font-bold rounded-md text-lg p-3  text-white bg-[#FF5C64] '>PRE-ORDER</button>
+                            <button className='font-bold rounded-md text-lg p-3  text-white bg-[#FF5C64] '>PRE-ORDER
+                            </button>
                             <MdKeyboardDoubleArrowLeft className='w-6 h-6 text-[#FF5C64]' />
 
                         </div>

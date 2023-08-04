@@ -1,5 +1,6 @@
 import React from 'react';
 import line from '../../assets/Images/Line 4.png'
+import Footer from './Footer';
 
 const RoadMap = () => {
     return (
@@ -303,6 +304,9 @@ const RoadMap = () => {
                     </div>
 
                 </div>
+
+
+                <Footer/>
 
 
 
