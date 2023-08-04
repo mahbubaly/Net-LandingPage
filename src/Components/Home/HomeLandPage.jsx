@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../assets/Images/logo.png'
 import { RxCross2 } from 'react-icons/rx';
+import PreOrder from './PreOrder';
 
 const HomeLandPage = () => {
     const navBar = <>
@@ -49,11 +50,11 @@ const HomeLandPage = () => {
 
     const starTimer = () => {
         const countdownDate = new Date('10 aug 2023');
-        
+
 
         interval = setInterval(() => {
             const now = new Date();
-            const distance = countdownDate - now ;
+            const distance = countdownDate - now;
 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
@@ -69,7 +70,7 @@ const HomeLandPage = () => {
                 setTimerHours(hours);
                 setTimerMin(min);
                 setTimerSec(sec);
-                
+
 
             }
 
@@ -213,6 +214,9 @@ const HomeLandPage = () => {
                         </div>
                     </section>
                 </div>
+
+
+                <PreOrder />
             </header>
 
 

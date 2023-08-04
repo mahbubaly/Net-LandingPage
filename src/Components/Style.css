@@ -1,0 +1,24 @@
+.preOrder_bg {
+    background-image: url(../assets/Images/bg-up.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1556px;
+    width: 1440;
+
+    
+}
+
+.preOrder_down {
+    background-image: url(../assets/Images/bg-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+   
+
+    
+
+    
+}
+
