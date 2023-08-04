@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../assets/Images/logo.png'
 import { RxCross2 } from 'react-icons/rx';
 import PreOrder from './PreOrder';
+import img1 from '../../assets/Images/Ban.png'
+import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const HomeLandPage = () => {
     const navBar = <>
@@ -144,7 +146,7 @@ const HomeLandPage = () => {
                                             }
                                         </span>
 
-                                        <div className={`${open ? 'bg-white w-1/2 right-0 top-14  p-2   pl-3 ' : '-bottom-96 -left-1/4'
+                                        <div className={`${open ? 'bg-white w-1/2 right-0 top-14  p-2   pl-3 ' : '-bottom-96 -left-[100%]'
                                             } absolute flex flex-col duration-500  gap-6 `}  >
 
 
@@ -213,6 +215,19 @@ const HomeLandPage = () => {
                             </div>
                         </div>
                     </section>
+                </div>
+
+                <div className='mx-auto justify-end flex absolute lg:left-[42%] left-[23%] md:left-[37%] md:-mt-28 -mt-20 lg:-mt-28'>
+                    <div className=''>
+                        <img src={img1} alt="" className='md:w-full w-[70%] ' />
+
+                        <div className='flex items-center md:ml-10'>
+                            <MdKeyboardDoubleArrowRight className='w-6 h-6 text-[#FF5C64]' />
+                            <button className='font-bold rounded-md text-lg p-3  text-white bg-[#FF5C64] '>PRE-ORDER</button>
+                            <MdKeyboardDoubleArrowLeft className='w-6 h-6 text-[#FF5C64]' />
+
+                        </div>
+                    </div>
                 </div>
 
 

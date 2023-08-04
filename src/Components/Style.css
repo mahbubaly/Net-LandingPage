@@ -22,3 +22,17 @@
     
 }
 
+
+.white_bg {
+    background-image: url(../assets/Images/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+   
+
+    
+
+    
+}
+
