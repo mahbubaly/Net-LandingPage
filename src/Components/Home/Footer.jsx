@@ -57,7 +57,7 @@ const Footer = () => {
             }} to='nav' spy={true} smooth={true} offset={50} duration={500}   >
                 <div className='flex justify-end'>
                     
-                    <MdKeyboardArrowUp href='nav' className='w-10 h-10 text-white rounded-full bg-[#FF5C64] p-2 mb-5 mr-32 -mt-14' />
+                    <MdKeyboardArrowUp href='nav' className='w-10 h-10 text-white rounded-full bg-[#FF5C64] p-2 mb-5 lg:mr-32 -mt-14' />
                 </div>
 
             </Link>
