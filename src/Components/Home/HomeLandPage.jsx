@@ -1,0 +1,223 @@
+import React, { useEffect, useRef, useState } from 'react';
+import logo from '../../assets/Images/logo.png'
+import { RxCross2 } from 'react-icons/rx';
+
+const HomeLandPage = () => {
+    const navBar = <>
+        <li>
+            <a
+                className="text-[#0B0B44]  rounded-md  shadow_bg  text-lg  transition hover:text-gray-500/75"
+                href="/"
+            >
+                How to buy
+            </a>
+        </li>
+
+        <li>
+            <a
+                className="text-[#0B0B44] text-lg transition hover:text-gray-500/75"
+                href="/"
+            >
+                Roadmap
+            </a>
+        </li>
+
+        <li>
+            <a
+                className="text-[#0B0B44] text-lg transition hover:text-gray-500/75"
+                href="/"
+            >
+                Whitepaper
+            </a>
+        </li>
+
+
+
+
+
+    </>
+
+
+    const [open, setOpen] = useState(false);
+    const [timerDays, setTimerDays] = useState('00');
+    const [timerHours, setTimerHours] = useState('00');
+    const [timerMin, setTimerMin] = useState('00');
+    const [timerSec, setTimerSec] = useState('00');
+
+
+    let interval = useRef;
+
+    const starTimer = () => {
+        const countdownDate = new Date('10 aug 2023');
+        
+
+        interval = setInterval(() => {
+            const now = new Date();
+            const distance = countdownDate - now ;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            const min = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+            const sec = Math.floor(distance % (1000 * 60) / 1000);
+
+
+            if (distance < 0) {
+                clearInterval(interval.current);
+            }
+            else {
+                setTimerDays(days);
+                setTimerHours(hours);
+                setTimerMin(min);
+                setTimerSec(sec);
+                
+
+            }
+
+
+
+        }, 1000)
+    }
+
+    useEffect(() => {
+        starTimer();
+
+        return () => {
+            clearInterval(interval.current);
+
+
+        }
+
+
+
+    }, [])
+
+    return (
+        <>
+            <header className="bg-white">
+                <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+                    <div className="flex h-16 items-center justify-between">
+                        <div className="flex-1 flex items-center gap-2">
+                            <a className="block text-teal-600" href="/">
+                                <span className="sr-only">Home</span>
+                                <img src={logo} alt="" />
+                            </a>
+                            <h1 className='text-2xl text-[#00006A] font-bold'>Catix</h1>
+                        </div>
+
+                        <div className="md:flex md:items-center md:gap-12">
+                            <nav aria-label="Global" className="hidden md:block">
+                                <ul className="flex items-center text-primary gap-6 text-sm">
+                                    {
+                                        navBar
+                                    }
+
+                                </ul>
+                            </nav>
+
+                            <div className="flex items-center gap-4">
+
+
+                                <div className="block z-50 lg:z-0 md:hidden">
+                                    <button onClick={() => setOpen(!open)}
+                                        className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+                                    >
+                                        <span className="sr-only">Toggle menu</span>
+
+
+                                        <span>
+                                            {
+                                                open === true ? <>   <RxCross2 className="h-5 bottom-0 w-5 text-black swap-off fill-current" /> </> : <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    className="h-5 w-5 "
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        d="M4 6h16M4 12h16M4 18h16"
+                                                    />
+                                                </svg>
+                                            }
+                                        </span>
+
+                                        <div className={`${open ? 'bg-white w-1/2 right-0 top-14  p-2   pl-3 ' : '-bottom-96 -left-1/4'
+                                            } absolute flex flex-col duration-500  gap-6 `}  >
+
+
+                                            <nav aria-label="Global">
+                                                <ul className="block lg:hidden justify-end  gap-6 text-sm">
+                                                    {navBar}
+                                                </ul>
+                                            </nav>
+
+
+
+                                        </div>
+
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <section class="">
+                        <div
+                            class="mx-auto max-w-screen-xl px-4 py-32 lg:flex  lg:items-center"
+                        >
+                            <div class="mx-auto max-w-xl text-center">
+                                <h1 class="text-3xl text-[#12124E] font-extrabold sm:text-5xl">
+                                    Best NFT Platform for creators
+
+                                </h1>
+
+                                <p className='text-lg font-bold text-primary  mt-7 mb-2'>Lunch in: </p>
+
+                                <div className='bg-[#F0F1F8] flex justify-center rounded-3xl'>
+                                    <div className="grid grid-flow-col gap-5 text-center ">
+                                        <div className="flex flex-col p-2 border-r-2   text-primary">
+                                            <span className="countdown font-mono text-5xl">
+                                                <span style={{ "--value": timerDays }}></span>
+                                            </span>
+                                            Days
+                                        </div>
+                                        <div className="flex flex-col p-2 border-r-2  text-primary">
+                                            <span className="countdown font-mono text-5xl">
+                                                <span style={{ "--value": timerHours }}></span>
+                                            </span>
+                                            Hours
+                                        </div>
+                                        <div className="flex flex-col p-2 border-r-2   text-primary">
+                                            <span className="countdown font-mono text-5xl">
+                                                <span style={{ "--value": timerMin }}></span>
+                                            </span>
+                                            Min
+                                        </div>
+                                        <div className="flex flex-col p-2 border-r-2  text-primary">
+                                            <span className="countdown font-mono text-5xl">
+                                                <span style={{ "--value": timerSec }}></span>
+                                            </span>
+                                            Sec
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </header>
+
+
+        </>
+    );
+};
+
+export default HomeLandPage;
