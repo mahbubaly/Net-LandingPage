@@ -4,34 +4,35 @@ import { RxCross2 } from 'react-icons/rx';
 import PreOrder from './PreOrder';
 import img1 from '../../assets/Images/Ban.png'
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { Link } from 'react-scroll';
 
 const HomeLandPage = () => {
     const navBar = <>
         <li>
-            <a
+            <Link  to="buy" spy={true} smooth={true} offset={50} duration={500}
                 className="lg:text-[#0B0B44] text-white  rounded-md  shadow_bg  text-lg  transition hover:text-gray-500/75"
-                href="/"
+               
             >
                 How to buy
-            </a>
+            </Link>
         </li>
 
         <li>
-            <a
+            <Link  to="roadMap" spy={true} smooth={true} offset={50} duration={500}
                 className="lg:text-[#0B0B44] text-white text-lg transition hover:text-gray-500/75"
                 href="/"
             >
                 Roadmap
-            </a>
+            </Link>
         </li>
 
         <li>
-            <a
+            <Link to="whiteBoard" spy={true} smooth={true} offset={50} duration={500}
                 className="lg:text-[#0B0B44] text-white text-lg transition hover:text-gray-500/75"
                 href="/"
             >
                 Whitepaper
-            </a>
+            </Link>
         </li>
 
 
@@ -224,7 +225,7 @@ const HomeLandPage = () => {
                 </div>
 
                 <div className='mx-auto justify-end flex absolute lg:left-[42%] left-[23%] md:left-[37%] md:-mt-28 -mt-20 lg:-mt-28'>
-                    <div className=''>
+                    <div id='buy' className=''>
                         <img src={img1} alt="" className='md:w-full w-[70%] ' />
 
                         <div className='flex items-center md:ml-10'>
