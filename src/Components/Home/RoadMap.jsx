@@ -5,7 +5,7 @@ import Footer from './Footer';
 const RoadMap = () => {
     return (
         <>
-            <div id='roadMap' className='max-w-screen-xl mx-auto'>
+            <div id='roadMap' className='lg:w-screen-xl max-w-screen-[1920px] mx-auto'>
                 <div>
                     <h1 className='text-2xl font-bold text-center text-primary -mt-48'>Roadmap</h1>
                 </div>
@@ -105,7 +105,7 @@ const RoadMap = () => {
 
                 {/* FAQ */}
 
-                <div id='whiteBoard' className='white_bg p-10'>
+                <div id='whiteBoard' className='white_bg  p-10'>
 
                     <div className='mx-auto max-w-xl text-center'>
                         <h1 class="text-3xl font-extrabold text-primary sm:text-4xl my-2">

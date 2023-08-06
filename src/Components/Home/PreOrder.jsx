@@ -11,14 +11,14 @@ const PreOrder = () => {
 
 
 
-            <div className='preOrder_bg max-w-screen-xl mx-auto relative '>
+            <div className='preOrder_bg  lg:w-screen-xl lg:w-screen-2xl max-w-screen-[1920px] mx-auto relative '>
                 <div className='lg:flex lg:mt-12 gap-5 justify-center items-center lg:w-[900px] lg:pt-[30%] pt-[10%] p-5  '>
 
                     <img src={img} alt="" className='bg-[#020241] lg:mt-0 mt-[70%] lg:pt-0 rounded-t-[50%] p-5 pb-0' />
 
                     <div className='text-white hover:shadow-2xl p-4'>
-                        <h1 className='text-xl font-bold'>Learn and Grow</h1>
-                        <p>
+                        <h1 className='text-xl xl:text-2xl  font-bold'>Learn and Grow</h1>
+                        <p className='text-lg xl:text-xl'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                     </div>
@@ -26,7 +26,7 @@ const PreOrder = () => {
                 <div className='flex justify-end lg:my-36'>
                     <div className='lg:flex gap-5 justify-center  items-center lg:w-[900px] lg:pt-[10%] pt-[10%] p-5  '>
                         <div className='text-white hover:shadow-2xl p-4 '>
-                            <h1 className='text-xl font-bold'>Learn and Grow</h1>
+                            <h1 className='text-xl t xl:text-2xl  font-bold'>Learn and Grow</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
@@ -37,15 +37,15 @@ const PreOrder = () => {
                 <div className='lg:flex gap-5 justify-center items-center lg:w-[900px] lg:pt-[10%] pt-[10%] p-5  '>
                     <img src={img3} alt="" className='bg-[#020241] rounded-t-[50%] p-10 pb-0' />
                     <div className='text-white hover:shadow-2xl p-4'>
-                        <h1 className='text-xl font-bold'>Learn and Grow</h1>
-                        <p>
+                        <h1 className='text-xl xl:text-2xl  font-bold'>Learn and Grow</h1>
+                        <p className='text-lg'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                     </div>
                 </div>
 
             </div>
-            <div className='preOrder_down  max-w-screen-xl mx-auto  '>
+            <div className='preOrder_down   max-w-screen-[1920px]  lg:w-screen-2xl mx-auto  '>
 
             </div>
 

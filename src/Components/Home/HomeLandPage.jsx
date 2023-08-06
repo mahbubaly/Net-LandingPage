@@ -98,7 +98,7 @@ const HomeLandPage = () => {
     return (
         <>
             <header id='nav' className="bg-white">
-                <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto lg:w-screen-xl max-w-screen-[1920px] px-4 sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between">
                         <div className="flex-1 flex items-center gap-2">
                             <a className="block text-teal-600" href="/">
@@ -224,7 +224,7 @@ const HomeLandPage = () => {
                     </section>
                 </div>
 
-                <div className='mx-auto justify-end flex absolute lg:left-[42%] left-[23%] md:left-[37%] md:-mt-28 -mt-20 lg:-mt-28'>
+                <div className='mx-auto justify-end flex absolute lg:left-[42%] left-[23%] md:left-[37%] md:-mt-28  -mt-20 lg:-mt-28  xl:left-[42%] xl:-mt-24 2xl:left-[45%] 2xl:-mt-16'>
                     <div id='buy' className=''>
                         <img src={img1} alt="" className='md:w-full w-[70%] ' />
 

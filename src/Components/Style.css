@@ -6,7 +6,7 @@
     height: 1556px;
     width: 1440;
 
-    
+
 }
 
 .preOrder_down {
@@ -15,11 +15,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
-   
+    margin-top: -400px;
 
-    
 
-    
+
+
+
 }
 
 
@@ -29,10 +30,107 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
-   
 
-    
 
-    
+
+
+
 }
 
+
+
+/* Styles for devices with a maximum width of 600 pixels (e.g., smartphones) */
+@media (max-width: 600px) {
+    .preOrder_bg {
+        background-image: url(../assets/Images/bg-up.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1556px;
+        width: 1440;
+
+
+    }
+
+    .preOrder_down {
+        background-image: url(../assets/Images/bg-2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+    
+    
+    
+    
+    
+    }
+}
+
+/* Styles for devices with a minimum width of 601 pixels and a maximum width of 900 pixels (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1440px) {
+    .preOrder_bg {
+        background-image: url(../assets/Images/bg-up.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1556px;
+        width: 1440;
+
+
+    }
+    .preOrder_down {
+        background-image: url(../assets/Images/bg-2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+    
+    
+    
+    
+    
+    }
+}
+
+/* Styles for devices with a minimum width of 901 pixels and a maximum width of 3840 pixels (e.g., laptops, desktops, 4K screens) */
+@media (min-width: 1441px) and (max-width: 3840px) {
+    .preOrder_bg {
+        background-image: url(../assets/Images/bg-up.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    
+    
+    }
+
+    .preOrder_down {
+        background-image: url(../assets/Images/bg-2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:1440px;
+        width: 100%;
+    
+    
+    
+    
+    
+    }
+
+
+    .white_bg {
+        background-image: url(../assets/Images/footer.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1200px;
+        width: 100%;
+    
+    
+    
+    
+    
+    }
+}
