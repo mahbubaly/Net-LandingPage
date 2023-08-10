@@ -11,7 +11,7 @@ const PreOrder = () => {
 
 
 
-            <div className='preOrder_bg  lg:w-screen-xl lg:w-screen-2xl max-w-screen-[1920px] mx-auto relative '>
+            <div className='preOrder_bg  relative '>
                 <div className='lg:flex lg:mt-12 gap-5 justify-center items-center lg:w-[900px] lg:pt-[30%] pt-[10%] p-5  '>
 
                     <img src={img} alt="" className='bg-[#020241] lg:mt-0 mt-[70%] lg:pt-0 rounded-t-[50%] p-5 pb-0' />
