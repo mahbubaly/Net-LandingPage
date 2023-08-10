@@ -100,7 +100,7 @@ const HomeLandPage = () => {
         <>
             <Container>
                 <header id='nav' className="bg-white">
-                    <div className="px-8">
+                    <div className="">
                         <div className="flex h-16 items-center justify-between">
                             <div className="flex-1 flex items-center gap-2">
                                 <a className="block text-teal-600" href="/">
